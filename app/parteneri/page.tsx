@@ -25,6 +25,7 @@ export default function Parteneri() {
       </header>
       <div className="sub-body">
         <div className="sub-wrap">
+          <h2 className="sr-only">Partenerii noștri</h2>
           <div className="cols3">
             {PARTENERI.map((p) => (
               <div className="col3" key={p.nume}>

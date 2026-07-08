@@ -16,14 +16,14 @@ export default function Juniorii() {
       </header>
       <div className="sub-body">
         <div className="sub-wrap">
-          <p className="jr-quote">
-            Primul volan. Trei luni mai târziu — <span className="hl">podium la clasa juniori.</span>
-          </p>
+          <h2 className="jr-quote">
+            Primul volan. Trei luni mai târziu — <span className="hl">podium la clasa Juniori.</span>
+          </h2>
           <div className="jr-meta">
-            <b>Luca Pavel, 12 ani</b> — podium la clasa juniori în primul sezon de karting
+            <b>Luca Pavel, 12 ani</b> — podium la clasa Juniori în primul sezon de karting
             <br />
-            <b>Maia Ionescu, 13 ani</b> — locul 2 în clasamentul Junior 1
-            <br />+ generația care vine din karting și dexteritate
+            <b>Maia Ionescu, 13 ani</b> — locul 2 la clasa Juniori
+            <br />+ o generație întreagă crescută în karting, de la primele tururi
           </div>
           <div className="prose" style={{ marginTop: 30 }}>
             <p>
@@ -32,7 +32,7 @@ export default function Juniorii() {
             </p>
           </div>
           <div className="rule-box">
-            <h4>Protejăm copiii, fără excepție</h4>
+            <h3>Protejăm copiii, fără excepție</h3>
             <p>
               Imaginile cu juniori apar public doar cu acordul scris al părinților. La noi, siguranța
               și școala vin înaintea oricărui like.
@@ -41,17 +41,17 @@ export default function Juniorii() {
           <div className="steps3">
             <div className="step3">
               <div className="n">1</div>
-              <h4>Ne scrii</h4>
+              <h3>Ne scrii</h3>
               <p>Un mesaj pe email sau prin formular — ne spui vârsta copilului și ce îl atrage la motorsport.</p>
             </div>
             <div className="step3">
               <div className="n">2</div>
-              <h4>Veniți la o etapă</h4>
+              <h3>Veniți la o etapă</h3>
               <p>Vedeți de aproape cum arată o zi de cursă — copil și părinți, împreună cu echipa.</p>
             </div>
             <div className="step3">
               <div className="n">3</div>
-              <h4>Primii pași</h4>
+              <h3>Primii pași</h3>
               <p>Program, condiții și costuri — discutate deschis, înainte de orice angajament.</p>
             </div>
           </div>

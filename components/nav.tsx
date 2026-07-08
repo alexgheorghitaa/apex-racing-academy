@@ -28,6 +28,9 @@ export default function Nav() {
   const onHero = pathname === "/";
   return (
     <nav className={`top ${onHero ? "on-hero" : ""}`} aria-label="Navigare principală">
+      <Link href="/" className="nav-home-m" aria-label="Acasă — Apex Racing Academy">
+        Apex Racing <span>Academy</span>
+      </Link>
       <div className="nav-in">
         <div className="nav-side l">
           {LEFT.map((l) => (

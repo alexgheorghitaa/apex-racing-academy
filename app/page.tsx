@@ -27,8 +27,8 @@ export default function Home() {
         <section className="trow">
           <Carousel
             slides={[
-              <Image key="img" src="/hero/hero-02.jpg" alt="" fill sizes="(max-width: 880px) 100vw, 58vw" style={{ objectFit: "cover" }} />,
-              <Photo key="podium" variant="p-podium" label="premiere și trofee" />,
+              <Image key="img" src="/hero/hero-02.jpg" alt="Mașină de curse pe circuit, în plină acțiune" fill sizes="(max-width: 880px) 100vw, 58vw" style={{ objectFit: "cover" }} />,
+              <Photo key="podium" variant="p-podium" label="premieri și trofee" />,
               <Photo key="track" variant="p-track" label="circuitul văzut de sus" />,
             ]}
           />
@@ -45,7 +45,7 @@ export default function Home() {
         <section className="trow">
           <Carousel
             slides={[
-              <Image key="img" src="/hero/hero-04.jpg" alt="" fill sizes="(max-width: 880px) 100vw, 58vw" style={{ objectFit: "cover" }} />,
+              <Image key="img" src="/hero/hero-04.jpg" alt="Pilot în cursă, văzut de pe marginea traseului" fill sizes="(max-width: 880px) 100vw, 58vw" style={{ objectFit: "cover" }} />,
               <Photo key="jr" variant="p-kart" label="junior la volanul kartului" />,
               <Photo key="garage" variant="p-garage" label="pregătirea mașinii în boxe" />,
             ]}

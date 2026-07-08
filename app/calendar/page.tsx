@@ -8,10 +8,10 @@ export const metadata: Metadata = {
 };
 
 const ETAPE = [
-  { data: "25–26 apr", nume: "Etapa 1 — Viteză în Coastă", loc: "Coastă · Râșnov" },
-  { data: "16–17 mai", nume: "Etapa 2 — Super Slalom", loc: "Slalom · Arad" },
-  { data: "27–28 iun", nume: "Etapa 3 — Cupa de Karting", loc: "Karting · Prejmer Circuit" },
-  { data: "12–13 sep", nume: "Etapa 4 — Viteză în Coastă", loc: "Coastă · Sinaia" },
+  { data: "25–26 apr", nume: "Etapa 1 — Viteză în Coastă", loc: "Coastă · Râșnov", status: "Finalizat" },
+  { data: "16–17 mai", nume: "Etapa 2 — Super Slalom", loc: "Slalom · Arad", status: "Finalizat" },
+  { data: "27–28 iun", nume: "Etapa 3 — Cupa de Karting", loc: "Karting · Prejmer Circuit", status: "Finalizat" },
+  { data: "12–13 sep", nume: "Etapa 4 — Viteză în Coastă", loc: "Coastă · Sinaia", status: "Urmează" },
 ];
 
 export default function Calendar() {
@@ -31,7 +31,7 @@ export default function Calendar() {
                   {e.nume}
                   <small>{e.loc}</small>
                 </div>
-                <span className="cal-s">Urmează</span>
+                <span className="cal-s">{e.status}</span>
               </div>
             ))}
           </div>

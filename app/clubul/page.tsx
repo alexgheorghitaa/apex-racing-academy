@@ -35,6 +35,7 @@ export default function Clubul() {
             <span className="badge-line">Club sportiv înregistrat</span>
           </div>
 
+          <h2 className="sr-only">Oamenii clubului</h2>
           <div className="cols3">
             <div className="col3">
               <Photo variant="p-portrait" label="Victor în paddock" />
@@ -46,7 +47,7 @@ export default function Clubul() {
               </p>
             </div>
             <div className="col3">
-              <Photo variant="p-kart" label="Bianca în echipament de curse" />
+              <Photo variant="p-slalom" label="mașină de competiție pe traseu" />
               <h3>Bianca Roman</h3>
               <div className="role">Campioană Națională Karting</div>
               <p>
