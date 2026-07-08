@@ -10,16 +10,16 @@ export default function Home() {
       <header className="hero">
         <HeroSlideshow />
         <div className="hero-txt">
-          <h1>Creștem următoarea generație de piloți</h1>
+          <h1>We build the next generation of racers</h1>
           <p>
-            Club de motorsport cu academie de juniori și titluri naționale — viteză crescută în
-            garaj, nu cumpărată din catalog.
+            A European motorsport club and junior academy — pace built in the workshop, not bought
+            from a catalogue.
           </p>
         </div>
       </header>
 
       <a className="strip" href="#explore">
-        <div className="s-t">Explorează clubul</div>
+        <div className="s-t">Explore the club</div>
         <div className="s-a" aria-hidden="true" />
       </a>
 
@@ -27,17 +27,16 @@ export default function Home() {
         <section className="trow">
           <Carousel
             slides={[
-              <Image key="img" src="/hero/hero-02.jpg" alt="Mașină de curse pe circuit, în plină acțiune" fill sizes="(max-width: 880px) 100vw, 58vw" style={{ objectFit: "cover" }} />,
-              <Photo key="podium" variant="p-podium" label="premieri și trofee" />,
-              <Photo key="track" variant="p-track" label="circuitul văzut de sus" />,
+              <Image key="img" src="/hero/hero-02.jpg" alt="Race car on circuit at full tilt" fill sizes="(max-width: 880px) 100vw, 58vw" style={{ objectFit: "cover" }} />,
+              <Photo key="podium" variant="p-podium" label="podium and trophies" />,
+              <Photo key="track" variant="p-track" label="the circuit from above" />,
             ]}
           />
           <div className="pan">
-            <h2>Șase titluri naționale în vitrina clubului</h2>
+            <h2>Six national titles in the trophy cabinet</h2>
             <p>
-              În cinci sezoane, piloții academiei au adus acasă șase titluri naționale la Viteză în
-              Coastă și Super Slalom. În 2025, Victor Ardelean și-a asigurat matematic titlul cu
-              două etape înainte de final.
+              In five seasons, our drivers have brought home six national titles across hillclimb and
+              slalom. In 2025, Lukas Brandt sealed his title with two rounds to spare.
             </p>
           </div>
         </section>
@@ -45,81 +44,81 @@ export default function Home() {
         <section className="trow">
           <Carousel
             slides={[
-              <Image key="img" src="/hero/hero-04.jpg" alt="Pilot în cursă, văzut de pe marginea traseului" fill sizes="(max-width: 880px) 100vw, 58vw" style={{ objectFit: "cover" }} />,
-              <Photo key="jr" variant="p-kart" label="junior la volanul kartului" />,
-              <Photo key="garage" variant="p-garage" label="pregătirea mașinii în boxe" />,
+              <Image key="img" src="/hero/hero-04.jpg" alt="Driver in competition, seen from trackside" fill sizes="(max-width: 880px) 100vw, 58vw" style={{ objectFit: "cover" }} />,
+              <Photo key="jr" variant="p-kart" label="junior at the wheel of a kart" />,
+              <Photo key="garage" variant="p-garage" label="car prep in the pit" />,
             ]}
           />
           <div className="pan">
-            <h2>Generația juniorilor</h2>
+            <h2>The next generation</h2>
             <p>
-              Primul volan. Trei luni mai târziu — podium la clasa juniori. Povestea lui Luca, 12
-              ani: un kart pregătit corect, mentori cu titluri naționale și un calendar adevărat de
-              competiții.
+              First time behind the wheel. Three months later — a podium in the Junior class. Luca&apos;s
+              story: a properly prepared kart, mentors with national titles, and a real racing
+              calendar.
             </p>
           </div>
         </section>
       </div>
 
       <div className="pgrid">
-        <Link className="pcard" href="/clubul">
-          <Photo variant="p-track" label="urcare contra cronometru" />
+        <Link className="pcard" href="/club">
+          <Photo variant="p-track" label="hillclimb run" />
           <div className="veil" />
           <div className="ct">
-            <h3>Viteză în Coastă</h3>
+            <h3>Hillclimb</h3>
             <span className="pd">
-              Disciplina-regină a clubului: urcări contra cronometru pe drumuri de munte închise. Aici s-au câștigat titlurile.
+              The club&apos;s signature discipline: timed runs up closed mountain roads. This is where the titles were won.
             </span>
           </div>
         </Link>
-        <Link className="pcard" href="/clubul">
-          <Photo variant="p-slalom" label="mașină printre jaloane" />
+        <Link className="pcard" href="/club">
+          <Photo variant="p-slalom" label="car between the cones" />
           <div className="veil" />
           <div className="ct">
-            <h3>Super Slalom</h3>
+            <h3>Slalom</h3>
             <span className="pd">
-              Precizie milimetrică printre jaloane, contra cronometru. Trei titluri naționale în vitrina clubului.
+              Millimetre precision between the cones, against the clock. Three national titles in the cabinet.
             </span>
           </div>
         </Link>
-        <Link className="pcard" href="/clubul">
-          <Photo variant="p-kart" label="kart în viraj" />
+        <Link className="pcard" href="/club">
+          <Photo variant="p-kart" label="kart in a corner" />
           <div className="veil" />
           <div className="ct">
             <h3>Karting</h3>
             <span className="pd">
-              Poarta de intrare a copiilor în motorsport — de la primele tururi la campionate naționale.
+              Every young driver&apos;s way into motorsport — from the first laps to national championships.
             </span>
           </div>
         </Link>
-        <Link className="pcard wide" href="/juniorii">
-          <Photo variant="p-crowd" label="paddock-ul în zi de cursă" />
+        <Link className="pcard wide" href="/juniors">
+          <Photo variant="p-crowd" label="paddock on race day" />
           <div className="veil" />
           <div className="ct">
-            <h3>Academia de juniori</h3>
-            <span className="pd">De la primul volan la competiții naționale.</span>
+            <h3>Junior Academy</h3>
+            <span className="pd">From the first time behind the wheel to national competition.</span>
           </div>
         </Link>
       </div>
 
       <div className="btn-row">
         <Link className="btn-o" href="/calendar">
-          Vezi calendarul 2026
+          See the 2026 calendar
         </Link>
       </div>
 
       <section className="ethos">
         <div className="ethos-in">
-          <Photo variant="p-portrait" label="portret în paddock" />
+          <Photo variant="p-portrait" label="portrait in the paddock" />
           <div className="ethos-c">
-            <h2>Un club condus de un campion — dedicat creșterii următoarei generații de piloți.</h2>
+            <h2>A club led by a champion — built to raise the next generation of racers.</h2>
             <p>
-              Apex Racing Academy e un club de motorsport condus de Victor Ardelean — campion
-              național multiplu la Viteză în Coastă. Aici nu se cumpără performanța: se
-              construiește, în garaj, la antrenamente și în weekendurile de cursă din toată țara.
+              Apex Racing Academy is a European motorsport club led by Lukas Brandt — multiple
+              national and European hillclimb champion. Here performance isn&apos;t bought: it&apos;s built, in
+              the workshop, at test days, and on race weekends across Europe.
             </p>
-            <Link className="btn-o" href="/clubul">
-              Despre club
+            <Link className="btn-o" href="/club">
+              About the club
             </Link>
           </div>
         </div>

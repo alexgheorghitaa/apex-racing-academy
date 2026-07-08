@@ -4,12 +4,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const LEFT = [
-  { href: "/clubul", label: "Clubul" },
-  { href: "/juniorii", label: "Juniorii" },
+  { href: "/club", label: "The Club" },
+  { href: "/juniors", label: "Juniors" },
   { href: "/calendar", label: "Calendar" },
 ];
 const RIGHT = [
-  { href: "/parteneri", label: "Parteneri" },
+  { href: "/partners", label: "Partners" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -27,8 +27,8 @@ export default function Nav() {
   const pathname = usePathname();
   const onHero = pathname === "/";
   return (
-    <nav className={`top ${onHero ? "on-hero" : ""}`} aria-label="Navigare principală">
-      <Link href="/" className="nav-home-m" aria-label="Acasă — Apex Racing Academy">
+    <nav className={`top ${onHero ? "on-hero" : ""}`} aria-label="Main navigation">
+      <Link href="/" className="nav-home-m" aria-label="Home — Apex Racing Academy">
         Apex Racing <span>Academy</span>
       </Link>
       <div className="nav-in">
@@ -38,7 +38,7 @@ export default function Nav() {
           ))}
         </div>
         <div className="pennant">
-          <Link href="/" aria-label="Acasă — Apex Racing Academy">
+          <Link href="/" aria-label="Home — Apex Racing Academy">
             <span className="pen-mark">A</span>
             <span className="pen-name">Apex Racing</span>
             <span className="pen-sub">Academy</span>

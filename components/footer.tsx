@@ -4,24 +4,23 @@ export default function Footer() {
   return (
     <footer>
       <div className="foot-social">
-        <span className="follow display">Urmărește-ne</span>
-        <span className="soon">Facebook · în curând</span>
-        <span className="soon">Instagram · în curând</span>
-        <span className="soon">YouTube · în curând</span>
+        <span className="follow display">Follow us</span>
+        <span className="soon">Facebook · soon</span>
+        <span className="soon">Instagram · soon</span>
+        <span className="soon">YouTube · soon</span>
       </div>
       <div className="foot-nav">
-        <Link href="/">Acasă</Link>
-        <Link href="/clubul">Clubul</Link>
-        <Link href="/juniorii">Juniorii</Link>
+        <Link href="/">Home</Link>
+        <Link href="/club">The Club</Link>
+        <Link href="/juniors">Juniors</Link>
         <Link href="/calendar">Calendar</Link>
-        <Link href="/parteneri">Parteneri</Link>
+        <Link href="/partners">Partners</Link>
         <Link href="/contact">Contact</Link>
       </div>
       <div className="foot-c">
-        © 2026 Apex Racing Academy · Site concept — club fictiv, realizat ca demonstrație.
+        © 2026 Apex Racing Academy · Concept site — fictional club, built as a demo.
         <br />
-        Foto: PaulyRacing, Supermac1961, promopixa, racin jason, nabtifal, Dave Hamster, Eje
-        Gustafsson, Lav Ulv, Ken March, Ford Racing — Flickr, licență CC BY 2.0.
+        Photos sourced from Flickr under CC BY 2.0 — verify each licence before commercial use.
       </div>
     </footer>
   );

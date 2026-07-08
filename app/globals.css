@@ -216,7 +216,7 @@ a.strip:hover .s-a { transform: translateY(3px); }
 .press-wrap > h2 { font-family: var(--font-display), "Impact", sans-serif; font-size: clamp(30px, 4.4vw, 52px); text-transform: uppercase; text-align: center; line-height: 1; margin-bottom: 40px; }
 .press-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
 .press-card { border: 1px solid var(--hairline); border-top: 3px solid var(--orange); padding: 26px 24px; text-align: center; background: #fff; }
-.press-card q { font-weight: 700; font-size: 16.5px; line-height: 1.45; quotes: "„" "”"; display: block; }
+.press-card q { font-weight: 700; font-size: 16.5px; line-height: 1.45; quotes: "\201C" "\201D"; display: block; }
 .press-card .src { display: block; margin-top: 16px; font-size: 11.5px; letter-spacing: .18em; text-transform: uppercase; color: var(--grey); }
 .press-note { text-align: center; font-size: 12px; letter-spacing: .04em; color: var(--grey); margin-top: 18px; }
 @media (max-width: 860px) { .press-grid { grid-template-columns: 1fr; } }

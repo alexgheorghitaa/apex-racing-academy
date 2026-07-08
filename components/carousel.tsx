@@ -28,17 +28,17 @@ export default function Carousel({ slides, start = 0 }: CarouselProps) {
           {s}
         </div>
       ))}
-      <button className="car-btn prev" aria-label="Imaginea anterioară" onClick={() => go(idx - 1)}>
+      <button className="car-btn prev" aria-label="Previous image" onClick={() => go(idx - 1)}>
         ‹
       </button>
-      <button className="car-btn next" aria-label="Imaginea următoare" onClick={() => go(idx + 1)}>
+      <button className="car-btn next" aria-label="Next image" onClick={() => go(idx + 1)}>
         ›
       </button>
-      <div className="car-dots" role="group" aria-label="Selectează imaginea">
+      <div className="car-dots" role="group" aria-label="Select image">
         {slides.map((_, i) => (
           <button
             key={i}
-            aria-label={`Imaginea ${i + 1}`}
+            aria-label={`Image ${i + 1}`}
             aria-current={i === idx ? "true" : undefined}
             onClick={() => go(i)}
           />

@@ -25,9 +25,9 @@ const allura = Allura({
   display: "swap",
 });
 
-const TITLE = "Apex Racing Academy — Creștem următoarea generație de piloți";
+const TITLE = "Apex Racing Academy — Building the next generation of racers";
 const DESC =
-  "Club de motorsport cu academie de juniori: Viteză în Coastă, Super Slalom, Karting. Șase titluri naționale — și o generație nouă pe grilă.";
+  "A European motorsport club and junior academy: hillclimb, slalom and karting. Six national titles — and a new generation on the grid.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://apex-racing-academy.vercel.app"),
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ro_RO",
     siteName: "Apex Racing Academy",
-    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Apex Racing Academy — creștem următoarea generație de piloți" }],
+    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Apex Racing Academy — building the next generation of racers" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -53,10 +53,10 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="ro" className={`${anton.variable} ${jost.variable} ${allura.variable}`}>
+    <html lang="en" className={`${anton.variable} ${jost.variable} ${allura.variable}`}>
       <body>
         <a className="skip" href="#continut">
-          Sari la conținut
+          Skip to content
         </a>
         <div className="shell">
           <Nav />

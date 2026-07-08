@@ -3,7 +3,7 @@ import ContactForm from "@/components/contact-form";
 
 export const metadata: Metadata = {
   title: "Contact — Apex Racing Academy",
-  description: "Contactează clubul — pentru părinți și pentru parteneri.",
+  description: "Get in touch with the club — for parents and for partners.",
 };
 
 export default function Contact() {
@@ -11,22 +11,22 @@ export default function Contact() {
     <>
       <header className="sub-head">
         <h1>Contact</h1>
-        <p className="lead">Fie că ești părinte, fie că reprezinți o firmă — începe cu un mesaj.</p>
+        <p className="lead">Whether you&apos;re a parent or represent a company — start with a message.</p>
       </header>
       <div className="sub-body">
         <div className="sub-wrap">
           <div className="contact-big">
-            <a className="mail" href="mailto:salut@apexracing.example">
-              salut@apexracing.example
+            <a className="mail" href="mailto:hello@apexracing.example">
+              hello@apexracing.example
             </a>
-            <div className="loc">Răspundem în 24 de ore · România</div>
+            <div className="loc">We reply within 24 hours · Europe</div>
           </div>
           <div className="cta-duo">
-            <a className="btn-o" href="mailto:salut@apexracing.example?subject=Detalii%20pentru%20p%C4%83rin%C8%9Bi">
-              Detalii pentru părinți
+            <a className="btn-o" href="mailto:hello@apexracing.example?subject=Junior%20academy%20enquiry">
+              Details for parents
             </a>
-            <a className="btn-o dark" href="mailto:salut@apexracing.example?subject=Parteneriat%20Apex%20Racing">
-              Devino partener
+            <a className="btn-o dark" href="mailto:hello@apexracing.example?subject=Partnership%20%E2%80%94%20Apex%20Racing">
+              Become a partner
             </a>
           </div>
           <ContactForm />

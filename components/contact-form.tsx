@@ -9,17 +9,17 @@ export default function ContactForm() {
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
-    const nume = (form.elements.namedItem("nume") as HTMLInputElement).value.trim();
+    const name = (form.elements.namedItem("name") as HTMLInputElement).value.trim();
     const contact = (form.elements.namedItem("contact") as HTMLInputElement).value.trim();
-    const gdpr = (form.elements.namedItem("gdpr") as HTMLInputElement).checked;
+    const consent = (form.elements.namedItem("consent") as HTMLInputElement).checked;
 
-    if (!nume || !contact) {
-      setError("Completează numele și un mod de contact.");
+    if (!name || !contact) {
+      setError("Please add your name and a way to reach you.");
       setSent(false);
       return;
     }
-    if (!gdpr) {
-      setError("Bifează acordul pentru prelucrarea datelor.");
+    if (!consent) {
+      setError("Please tick the data-processing consent.");
       setSent(false);
       return;
     }
@@ -29,26 +29,26 @@ export default function ContactForm() {
 
   return (
     <form className="cform" onSubmit={onSubmit} noValidate>
-      <label htmlFor="cf-nume">Numele tău</label>
-      <input id="cf-nume" name="nume" type="text" autoComplete="name" placeholder="Nume și prenume" required />
-      <label htmlFor="cf-contact">Telefon sau email</label>
-      <input id="cf-contact" name="contact" type="text" autoComplete="email" placeholder="Cum te putem contacta" required />
-      <label htmlFor="cf-subiect">Subiect</label>
-      <select id="cf-subiect" name="subiect" defaultValue="Vreau detalii pentru copilul meu">
-        <option>Vreau detalii pentru copilul meu</option>
-        <option>Vreau să devin partener</option>
-        <option>Altceva</option>
+      <label htmlFor="cf-name">Your name</label>
+      <input id="cf-name" name="name" type="text" autoComplete="name" placeholder="First and last name" required />
+      <label htmlFor="cf-contact">Phone or email</label>
+      <input id="cf-contact" name="contact" type="text" autoComplete="email" placeholder="How can we reach you" required />
+      <label htmlFor="cf-subject">Subject</label>
+      <select id="cf-subject" name="subject" defaultValue="Details for my child">
+        <option>Details for my child</option>
+        <option>I&apos;d like to become a partner</option>
+        <option>Something else</option>
       </select>
-      <label htmlFor="cf-mesaj">Mesajul tău</label>
-      <textarea id="cf-mesaj" name="mesaj" placeholder="Scrie-ne pe scurt…" />
+      <label htmlFor="cf-message">Your message</label>
+      <textarea id="cf-message" name="message" placeholder="A few lines…" />
       <div className="gdpr">
-        <input id="cf-gdpr" name="gdpr" type="checkbox" />
-        <label htmlFor="cf-gdpr">
-          Sunt de acord cu prelucrarea datelor pentru a fi contactat.
+        <input id="cf-consent" name="consent" type="checkbox" />
+        <label htmlFor="cf-consent">
+          I agree to my data being processed so the club can contact me.
         </label>
       </div>
       <button className="btn-o" type="submit">
-        Trimite mesajul
+        Send message
       </button>
       {error && (
         <p className="form-status show" role="alert" style={{ background: "#FDECEC", borderColor: "#E23A2E" }}>
@@ -57,7 +57,7 @@ export default function ContactForm() {
       )}
       {sent && !error && (
         <p className="form-status show" role="status">
-          Mulțumim! Mesajul a fost înregistrat — revenim în cel mult 24 de ore. ✓
+          Thanks! Your message has been logged — we&apos;ll get back to you within 24 hours. ✓
         </p>
       )}
     </form>
