@@ -39,13 +39,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ro_RO",
     siteName: "Apex Racing Academy",
-    images: [{ url: "/hero/hero-04.jpg", width: 1024, height: 576, alt: "Apex Racing Academy" }],
+    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Apex Racing Academy — creștem următoarea generație de piloți" }],
   },
   twitter: {
     card: "summary_large_image",
     title: TITLE,
     description: DESC,
-    images: ["/hero/hero-04.jpg"],
+    images: ["/og.jpg"],
   },
 };
 
